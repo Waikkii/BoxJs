@@ -19,8 +19,8 @@ const {DmYY, Runing} = require('./DmYY');
 class Widget extends DmYY {
   constructor(arg) {
     super(arg);
-    this.name = '中国联通';
-    this.en = 'ChinaUnicom_2024';
+    this.name = '中国联通166';
+    this.en = 'ChinaUnicom_166';
     this.logo = 'https://raw.githubusercontent.com/anker1209/icon/main/zglt-big.png';
     this.smallLogo = 'https://raw.githubusercontent.com/anker1209/icon/main/zglt.png';
     this.Run();
@@ -1079,8 +1079,8 @@ class Widget extends DmYY {
     
     const request = new Request(updateUrl);
     const response = await request.loadJSON();
-    const latestVersion = response.find(i => i.name === "ChinaUnicom_2024").version;
-    const downloadUrl = response.find(i => i.name === "ChinaUnicom_2024").downloadUrl;
+    const latestVersion = response.find(i => i.name === "ChinaUnicom_166").version;
+    const downloadUrl = response.find(i => i.name === "ChinaUnicom_166").downloadUrl;
     const isUpdateAvailable = this.version !== latestVersion;
 
     if (isUpdateAvailable) {
