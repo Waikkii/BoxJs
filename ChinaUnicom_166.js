@@ -213,7 +213,7 @@ class Widget extends DmYY {
     const getBoxjsData = async () => {
       try {
         const req = new Request(
-          "https://boxjs.com/query/data/@ChinaUnicom.10010v4.cookie"
+          "http://boxjs.com/query/data/@YaYa_10010_166.cookie"
         );
         req.timeoutInterval = 10;
         req.method = "GET";
