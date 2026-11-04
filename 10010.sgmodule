@@ -1,8 +1,6 @@
 #!name=获取联通 cookie
 #!desc=获取联通 cookie
 #!category=流量监控📈
-#!system=ios
-
 
 [Script]
 Rewrite: 获取联通cookie = type=http-request,pattern=^https:\/\/m\.client\.10010\.com\/mobileserviceimportant\/home\/queryUserInfoSeven,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Waikkii/BoxJs/refs/heads/main/10010.js,script-update-interval=0
