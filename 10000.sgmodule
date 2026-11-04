@@ -1,0 +1,5 @@
+[MITM]
+hostname = e.dlife.cn
+
+[Script]
+电信登录地址 = type=http-request,pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Waikkii/BoxJs/refs/heads/main/10000.js,script-update-interval=0
