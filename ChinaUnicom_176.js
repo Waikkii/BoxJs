@@ -19,8 +19,8 @@ const {DmYY, Runing} = require('./DmYY');
 class Widget extends DmYY {
   constructor(arg) {
     super(arg);
-    this.name = '中国联通';
-    this.en = 'ChinaUnicom_2024';
+    this.name = '中国联通176';
+    this.en = 'ChinaUnicom_176';
     this.logo = 'https://raw.githubusercontent.com/anker1209/icon/main/zglt-big.png';
     this.smallLogo = 'https://raw.githubusercontent.com/anker1209/icon/main/zglt.png';
     this.Run();
@@ -213,7 +213,7 @@ class Widget extends DmYY {
     const getBoxjsData = async () => {
       try {
         const req = new Request(
-          "https://boxjs.com/query/data/@ChinaUnicom.10010v4.cookie"
+          "http://boxjs.com/query/data/@YaYa_10010_176.cookie"
         );
         req.timeoutInterval = 10;
         req.method = "GET";
@@ -1079,8 +1079,8 @@ class Widget extends DmYY {
     
     const request = new Request(updateUrl);
     const response = await request.loadJSON();
-    const latestVersion = response.find(i => i.name === "ChinaUnicom_2024").version;
-    const downloadUrl = response.find(i => i.name === "ChinaUnicom_2024").downloadUrl;
+    const latestVersion = response.find(i => i.name === "ChinaUnicom_176").version;
+    const downloadUrl = response.find(i => i.name === "ChinaUnicom_176").downloadUrl;
     const isUpdateAvailable = this.version !== latestVersion;
 
     if (isUpdateAvailable) {
