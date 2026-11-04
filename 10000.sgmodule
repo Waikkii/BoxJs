@@ -1,3 +1,8 @@
+#!name=获取电信地址
+#!desc=获取电信地址
+#!category=流量监控📈
+#!system=ios
+
 [MITM]
 hostname = e.dlife.cn
 
