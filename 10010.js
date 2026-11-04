@@ -18,7 +18,6 @@ function GetCookie() {
   $.log($request.headers);
   if (cookie && cookie.indexOf('JSESSIONID') > -1) {
     $.write(cookie, 'cookie');
-    $.notify('中国联通','cookie 写入成功');
   }
   $.done();
 }
