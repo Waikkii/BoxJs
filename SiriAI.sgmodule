@@ -1,0 +1,20 @@
+#!name=Siri AI
+#!desc=Apple Intelligence / Siri AI 专用代理分流模块，支持自定义节点或代理策略组。
+#!arguments=代理分流:PROXY
+#!arguments-desc=Apple Intelligence 代理策略设置\n\n支持填写节点名称或代理策略组名称。\n\n默认使用 PROXY 策略组。\n\n包含 Siri、Apple Intelligence、Apple Relay 相关域名。\n\n不包含节点检测、MITM、脚本及重写规则。
+#!author=Custom
+
+[Rule]
+# Apple Intelligence
+DOMAIN-SUFFIX,gateway.icloud.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,{{{代理分流}}}
+DOMAIN-SUFFIX,guzzoni.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,cp4.cloudflare.com,{{{代理分流}}}
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,smoot.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.akamaized.net,{{{代理分流}}}
+DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net,{{{代理分流}}}
+DOMAIN-SUFFIX,api-siri-prod.apple.com,{{{代理分流}}}
+DOMAIN-SUFFIX,seed.siri.apple.com,{{{代理分流}}}
